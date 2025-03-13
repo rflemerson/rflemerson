@@ -1,0 +1,111 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=0.5in,nofoot]{geometry}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+    citecolor=black
+}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*1}{*1}
+
+\newcommand{\entry}[4]{
+    \noindent\textbf{#1} \hfill #2 \\
+    \noindent\textit{#3} \hfill \textit{#4} \\
+    \vspace{2pt}
+}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+    \textbf{\Large Rafael E. Leal}
+    
+    \vspace{0.4em}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+    \raggedleft Curitiba -- PR
+    
+    {\color{blue}} \href{tel:+5541995717120}{\faPhone \space (41) 99571-7120}
+    {\color{blue}} \href{mailto:rflemerson@gmail.com}{\faEnvelope \space rflemerson@gmail.com}
+    
+    \vspace{0.2em}
+    \quad
+    {\color{blue}} \href{https://github.com/rflemerson}{\faGithub \space GitHub} \quad
+    {\color{blue}} \href{https://www.linkedin.com/in/rflmerson/}{\faLinkedin \space LinkedIn} \\
+\end{minipage}
+
+\vspace{1em}
+
+\begin{center}
+    \textbf{\Large Desenvolvedor Full Stack}
+\end{center}
+\vspace{0.5em}
+
+\section*{Resumo Profissional}
+\vspace{0.6em}
+
+{Graduando em Engenharia Elétrica com ênfase em Sistemas Eletrônicos Embarcados pela UFPR. Desenvolvedor Full Stack com experiência em frameworks como Flask, Django e Angular. Conhecimento em práticas de CI/CD para integração e entrega contínua. Experiência com Docker para conteinerização de aplicações e Kubernetes para orquestração de contêineres em ambientes de desenvolvimento e produção.}
+
+\vspace{0.6em}
+
+\section*{Habilidades Técnicas}
+\vspace{0.6em}
+
+\subsection*{Linguagens de Programação e Frameworks}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item \textbf{Front-end}: Angular (TypeScript, HTML, CSS/SCSS), Angular Material, Bootstrap
+    \item \textbf{Back-end}: Python (Django, Flask), SQL (PostgreSQL, SQLite)
+    \item \textbf{Sistemas e Hardware}: C/C++, VHDL
+\end{itemize}
+
+\subsection*{DevOps e Infraestrutura}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item \textbf{DevOps}: Docker, Kubernetes, GitLab CI/CD, Azure DevOps
+    \item \textbf{Ferramentas}: GNU/Linux, Bash, Git
+\end{itemize}
+
+\section*{Experiência}
+\vspace{0.6em}
+
+\entry{CITS \textbullet{} Centro Internacional de Tecnologia de Software}{\faCalendar \space Mar/2023 -- Presente}{Desenvolvimento de Software -- Estagiário}{Curitiba -- PR}
+\vspace{-1.6em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Desenvolvimento full stack com Flask/Django (Python) e Angular (TypeScript/HTML5/SCSS)
+    \item Implementação de SSO via Microsoft Entra ID (ex-Azure AD) e LDAP para sistemas corporativos
+    \item Criação de pipelines CI/CD com GitLab CI/Azure DevOps, integrando SAST e DAST
+    \item Construção de imagens Docker seguindo as melhores práticas
+    \item Desenvolvimento de manifests YAML para orquestração Kubernetes (AKS/EKS)
+\end{itemize}
+
+\entry{Lactec}{\faCalendar \space Fev/2020 -- Mar/2023}{Pesquisa e Desenvolvimento -- Bolsista ITI}{Curitiba -- PR}
+\vspace{-1.6em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Desenvolvimento de algoritmos de visão computacional e processamento de dados em 2D/3D
+    \item Configuração de ambientes de desenvolvimento e contêineres voltados para o treinamento de modelos de machine learning (ML)
+    \item Preparação e pré-processamento de datasets, com etapas de limpeza, transformação e criação de labels
+\end{itemize}
+
+\section*{Formação Acadêmica}
+\vspace{0.6em}
+
+\entry{UFPR \textbullet{} Universidade Federal do Paraná}{\faCalendar \space Jan/2020 -- Dez/2025}{Engenharia Elétrica com ênfase em Sistemas Eletrônicos Embarcados}{Curitiba -- PR}
+
+\section*{Certificações}
+\vspace{0.6em}
+\entry{ABNT \textbullet{} Associação Brasileira de Normas Técnicas}{\faCalendar \space Jul/2024}{Inteligência Artificial aplicada à Melhoria de Processos Organizacionais}{}
+
+\end{document}
